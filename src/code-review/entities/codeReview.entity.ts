@@ -23,6 +23,12 @@ export class CodeReview {
   @Column({ type: 'text', nullable: true })
   optimizedCode: string;
 
+  @Column({ type: 'text', nullable: true })
+  securityReport: string;
+
+  @Column({ type: 'text', nullable: true })
+  qualityCheck: string;
+
   @CreateDateColumn()
   createdAt: Date;
 }
